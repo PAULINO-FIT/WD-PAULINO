@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Paulino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #about {
+            font-family: 'Roboto', sans-serif;
+        }
+        #experience {
+            font-family: 'Montserrat', sans-serif;
+        }
+        #portfolio {
+            font-family: 'Roboto', sans-serif;
+        }
+        #contact {
+            font-family: 'Montserrat', sans-serif;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        p, ul, li {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header style="color: aliceblue; background-color: rgba(0, 0, 0, 0.5); text-align: center;">
+        <h1 style="margin-bottom: 30px; margin-left: 30px;">Miguel Paulino</h1>
+        <nav>
+            <ul style="list-style-type: none; padding: 0; margin-left: 60px;">
+                <li style="display: inline; margin-right: 20px;"><a href="#about" style="color: aliceblue; text-decoration: none;">About Me</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#experience" style="color: aliceblue; text-decoration: none;">Experiences</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#portfolio" style="color: aliceblue; text-decoration: none;">Portfolio</a></li>
+                <li style="display: inline;"><a href="#contact" style="color: aliceblue; text-decoration: none;">Get in Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" style="color: aliceblue; background-color: rgba(0, 0, 0, 0.5); padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h2>About Me</h2>
+        <p style="font-size: 1em; text-align: center;">A graphic designer who rises above others with his expertise in visual and brand identity, particularly within the sports industry. With a deep understanding of athletic branding, I create dynamic and engaging designs that resonate with fans and athletes alike. My passion for sports drives my creativity, allowing me to develop compelling graphics that capture the essence of athleticism and teamwork. Whether it's designing logos, merchandise, or promotional materials, I strive to elevate brands and help them connect with their audience in meaningful ways.</p>
+    </section>
+    <section id="experience" style="color: aliceblue; background-color: rgba(0, 0, 0, 0.5); background-size: cover; padding: 10px;font-size: 1.5em;">
+        <h2>Experiences</h2>
+        <ul>
+            <li>Lead Graphic Designer at EZYCSGO (2018 - 2019)</li>
+            <li>Graphic Designer at P2E NEWS (2020 - 2021)</li>
+            <div class="carousel">
+                <input type="radio" name="carousel" id="slide1" checked>
+                <input type="radio" name="carousel" id="slide2">
+                <input type="radio" name="carousel" id="slide3">
+                <div class="carousel-images">
+                    <div class="carousel-item" id="item1">
+                        <img src="P2E1.png" alt="Image 1">
+                    </div>
+                    <div class="carousel-item" id="item2">
+                        <img src="P2E2.png" alt="Image 2">
+                    </div>
+                    <div class="carousel-item" id="item3">
+                        <img src="P2E3.png" alt="Image 3">
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <label for="slide1" class="carousel-dot"></label>
+                    <label for="slide2" class="carousel-dot"></label>
+                    <label for="slide3" class="carousel-dot"></label>
+                </div>
+            </div>
+            <li>Junior Graphic Designer at Pegaxy (2020 - Present)</li>
+            <div class="carousel">
+                <input type="radio" name="carousel2" id="slide2-1" checked>
+                <input type="radio" name="carousel2" id="slide2-2">
+                <input type="radio" name="carousel2" id="slide2-3">
+                <div class="carousel-images">
+                    <div class="carousel-item" id="item2-1">
+                        <img src="pe1.png" alt="Image 4">
+                    </div>
+                    <div class="carousel-item" id="item2-2">
+                        <img src="pe2.pg" alt="Image 5">
+                    </div>
+                    <div class="carousel-item" id="item2-3">
+                        <img src="pe3.png" alt="Image 6">
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <label for="slide2-1" class="carousel-dot"></label>
+                    <label for="slide2-2" class="carousel-dot"></label>
+                    <label for="slide2-3" class="carousel-dot"></label>
+                </div>
+            </div>
+            <li>Graphic Designer at Mirai Labs (2020 - Present)</li>
+            <div class="carousel">
+                <input type="radio" name="carousel3" id="slide7" checked>
+                <input type="radio" name="carousel3" id="slide8">
+                <input type="radio" name="carousel3" id="slide9">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="/Users/miguelfrancopaulino/Downloads/WD-Template-Project/WEBWEB/DESIGN UGC.png" alt="Image 7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Users/miguelfrancopaulino/Downloads/WD-Template-Project/WEBWEB/discord size.png" alt="Image 8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PEGAJUMP.png" alt="Image 9">
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <label for="slide7" class="carousel-dot"></label>
+                    <label for="slide8" class="carousel-dot"></label>
+                    <label for="slide9" class="carousel-dot"></label>
+                </div>
+            </div>
+            <li>Graphic Designer at 2HYPE (2021 - 2023)</li>
+        </ul>
+        <img src="experiences.jpg" alt="Experience" style="display: block; margin: 20px auto; width: 50%; height: auto;">
+    </section>
+    <section id="portfolio" style="color: aliceblue; background-color: rgba(0, 0, 0, 0.5); padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item" style="margin: 10px 0;">
+            <img src="personalproject.jpg" alt="Project1" style="display: block; margin: 20px auto; width: 50%; height: auto;">
+            <p>Personal Projects</p>
+        </div>
+        <div class="portfolio-item" style="margin: 10px 0;">
+            <img src="valo.png" alt="Project 2" style="display: block; margin: 20px auto; width: 50%; height: auto;">
+            <p> Team Secret Valorant </p>
+        </div>
+        <div class="portfolio-item" style="margin: 10px 0;">
+            <img src="z4.png" alt="Project 3" style="display: block; margin: 20px auto; width: 50%; height: auto;">
+            <p>Z4 Esports</p>
+        </div>
+    </section>
+    <section id="contact" style="color: aliceblue; background-color: rgba(0, 0, 0, 0.5); padding: 20px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h2>Contact Me</h2>
+        <form style="width: 300px;"> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" required style="width: 100%; margin-bottom: 10px;">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required style="width: 100%; margin-bottom: 10px;">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" required style="width: 100%; margin-bottom: 10px;"></textarea>
+            
+            <button type="submit" style="background-color: aliceblue; color: black; border: none; padding: 10px 15px; cursor: pointer;">
+                Send Message
+            </button>
+        </form>
+    </section>
+    <footer style="text-align: center; color: aliceblue; padding: 20px;">
+        <p>&copy; 2024 Miguel Paulino. All Rights Reserved.</p>
+    </footer>
+    
