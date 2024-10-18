@@ -9,11 +9,11 @@
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">WD-PAULINO</h3></h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+ The Personal Portfolio Website is a dynamic showcase of my work as a graphic designer, emphasizing my expertise in visual and brand identity within the sports industry. Designed with a responsive layout, it features an interactive carousel for project navigation and clearly organized sections including About Me, Experiences, Portfolio, and Contact Me. The site enhances user engagement with a custom cursor and includes a contact form for easy communication. Utilizing HTML, CSS, and JavaScript, this website not only highlights my skills but also serves as a platform for connecting with potential clients.
 </div>
 
 <br />
