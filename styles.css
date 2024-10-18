@@ -1,79 +1,147 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Bold', sans-serif; /* Added semicolon */
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-image: url(china.jpg);
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background: url('HEADER.jpg') no-repeat center center;
+    background-size: cover;
+    height: 20vh; /* Use one height definition */
+    color: #ffff; 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    font-family: Impact;
+    font-size: 20px; 
 }
 
-nav ul {
-    list-style: none;
+a {
+    color: aliceblue;
+}
+
+a:visited {
+    color: rgb(67, 108, 240);
+}
+
+a:hover {
+    color: aqua; /* Added semicolon */
+    text-decoration: underline; /* Changed to a valid value */
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    padding: 20px;
+    color: aliceblue; 
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px;
+    height: 400vh; 
+}
+
+#experience ul {
+    list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 10px;
-}
-
-.portfolio-item {
-    margin-bottom: 20px;
-}
-
-.portfolio-item img {
-    max-width: 100%;
+#experience img {
+    margin: 20px auto;
+    display: block;
+    width: 50%; 
     height: auto;
 }
 
-form {
+#about {
     display: flex;
     flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px;
+    height: 40vh; 
 }
 
-form label {
-    margin: 5px 0;
+#about ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-form input,
-form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
+#about img {
+    margin: 20px auto;
+    display: block;
+    width: 50%; 
+    height: auto;
 }
 
-button {
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    border: none;
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel img {
+    width: 100%; 
+}
+
+input[type="radio"] {
+    display: none; 
+}
+
+#slide1:checked ~ .carousel-images {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .carousel-images {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel-images {
+    transform: translateX(-200%);
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
 
-button:hover {
-    background: #555;
+.carousel-dot:hover {
+    background: rgba(255, 255, 255, 0.8);
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+input[type="radio"]:checked + .carousel-controls .carousel-dot {
+    background: rgba(255, 255, 255, 1);
+}
+
+.custom-cursor {
+    cursor: url('./cursor.png'), auto; /* Updated to a relative path */
 }
